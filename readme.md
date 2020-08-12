@@ -164,12 +164,12 @@ class PagesController extends Controller
 <meta name="robots" content="index, nofollow">
 <meta property="og:title" content="Home page">
 <meta property="og:description" content="This is my home page">
-<meta property="og:image" content="http://project.test/images/image.jpg">
+<meta property="og:image" content="http://project.test/images/og-image.jpg">
 <meta property="og:url" content="http://project.test">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Home page">
 <meta property="twitter:description" content="This is my home page">
-<meta property="twitter:image" content="http://project.test/images/image.jpg">
+<meta property="twitter:image" content="http://project.test/images/og-image.jpg">
 <meta property="twitter:url" content="http://project.test">
 ```
 
