@@ -1,0 +1,22 @@
+{
+    "name": "quaidesbalises/meta",
+    "description": "Manage your meta tags for your application",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "François Dusautoir",
+            "email": "francois.dusautoir@quaidesbalises.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qdb\\Meta\\MetaServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "Qdb\\Meta\\MetaFacade"
+            }
+        }
+    }
+}
