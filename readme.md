@@ -31,26 +31,26 @@ The configuration file contains default keys and values array.
 * g.e : twitter:title takes the og:title default value
 */
 'keys' => [
-'title',
-'description',
-'robots',
-'og:title',
-'og:image',
-'og:url',
-'og:description',
-'twitter:card',
-'twitter:title',
-'twitter:description',
-'twitter:image',
-'twitter:url'
+	'title',
+	'description',
+	'robots',
+	'og:title',
+	'og:image',
+	'og:url',
+	'og:description',
+	'twitter:card',
+	'twitter:title',
+	'twitter:description',
+	'twitter:image',
+	'twitter:url'
 ],
 
 /**
 * Default values for the given keys
 */
 'values' => [
-'og:image' => 'images/og-image.jpg',
-'twitter:card' => 'summary_large_image',
+	'og:image' => 'images/og-image.jpg',
+	'twitter:card' => 'summary_large_image',
 ]
 
 ]
@@ -64,18 +64,18 @@ The configuration file contains default keys and values array.
 ### Set meta tags
 
 ```php
- Meta::set('title', 'My title')
- Meta::set('description', 'My description')
- Meta::set('og:image', '/images/image.jpg')
+Meta::set('title', 'My title')
+Meta::set('description', 'My description')
+Meta::set('og:image', '/images/image.jpg')
 ````
 
 **and** / **or**
 
 ```php
 Meta::set([
- 'title' => 'My title',
- 'description' => 'My description',
- 'og:image' => '/images/image.jpg'
+	'title' => 'My title',
+	'description' => 'My description',
+	'og:image' => '/images/image.jpg'
 ])
 ```
 
@@ -124,16 +124,16 @@ Given the default keys on the configuration file display above, let's see just b
 #### Model :
 
 ```php
- class Page extends Model
- {
-  public function setMetas()
-  {
-   Meta::set([
-    'title' => $this->seo_title,
-    'description' => $this->seo_desc,
-    'robots' => $this->seo_robots
-   ]);
-  }
+class Page extends Model
+{
+	public function setMetas()
+	{
+		Meta::set([
+			'title' => $this->seo_title,
+			'description' => $this->seo_desc,
+			'robots' => $this->seo_robots
+		]);
+	}
 }
 ```
 
@@ -142,11 +142,11 @@ Given the default keys on the configuration file display above, let's see just b
 ```php
 class PagesController extends Controller
 {
- public function show(Page $page)
- {
-  $page->setMetas();
-  return view('pages.page', compact('page'));
- }
+	public function show(Page $page)
+	{
+		$page->setMetas();
+		return view('pages.page', compact('page'));
+	}
 }
 ```
 
@@ -176,7 +176,7 @@ class PagesController extends Controller
 
 Given the display wanted fields which are set on your configuration file and base on available values  ```og:``` and ```twitter:``` are automatically filled.  
 
- 
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
