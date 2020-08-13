@@ -1,7 +1,10 @@
 {
     "name": "quaidesbalises/meta",
+    "type": "library",
     "description": "Manage your meta tags for your application",
     "license": "MIT",
+    "keywords": ["meta tags", "quaidesbalises", "laravel", "meta-tags", "seo"],
+    "homepage": "https://github.com/quaidesbalises/laravel-meta",
     "authors": [
         {
             "name": "François Dusautoir",
@@ -28,5 +31,6 @@
                 "Meta": "Qdb\\Meta\\MetaFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
