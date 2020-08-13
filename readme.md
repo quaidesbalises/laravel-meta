@@ -6,7 +6,7 @@ Manage your meta tags and displays them on your blade layout.
 
 
 ```bash
-composer require quaidesbalises/laravel-meta
+composer require quaidesbalises/meta
 ```
 
 
