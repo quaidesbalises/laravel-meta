@@ -25,7 +25,7 @@ The configuration file contains default keys and values array.
 'default' => [
 
   /*
-  * Default keys which needs to be print everytime
+  * Default display keys which needs to be print everytime
   * if not exists, it takes the most valuable default value
   * g.e : og:title takes the title default value
   * g.e : twitter:title takes the og:title default value
@@ -111,7 +111,7 @@ Also, you can display all metas at once :
 @metas 
 ```
 
-Please not that this blade directive will takes care of the **default display keys which are set on your configuration file**. You are free to remove or adding keys to the array as you wants. In case of a specify key was not set, it retrieves the most logic value for you **based on your existing values**.
+Please note that this blade directive will takes care of the **default display keys which are set on your configuration file**. You are free to remove or adding keys to the array as you wants. In case of a specify key was not set, it retrieves the most logic value for you **based on your existing values**.
 
 This is a valuable feature to prevent you to rewrite values for tags like ```og:title```, ```og:description```, ```twitter:title``` etc ...
 
