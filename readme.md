@@ -24,36 +24,36 @@ The configuration file contains default keys and values array.
 ```php
 'default' => [
 
-		/*
-		 * Default keys which needs to be print everytime
-		 * if not exists, it takes the most valuable default value
-		 * g.e : og:title takes the title default value
-		 * g.e : twitter:title takes the og:title default value
-		 */
-		'keys' => [
-			'title',
-			'description',
-			'robots',
-			'og:title',
-			'og:image',
-			'og:url',
-			'og:description',
-			'twitter:card',
-			'twitter:title',
-			'twitter:description',
-			'twitter:image',
-			'twitter:url'
-		],
+/*
+* Default keys which needs to be print everytime
+* if not exists, it takes the most valuable default value
+* g.e : og:title takes the title default value
+* g.e : twitter:title takes the og:title default value
+*/
+'keys' => [
+'title',
+'description',
+'robots',
+'og:title',
+'og:image',
+'og:url',
+'og:description',
+'twitter:card',
+'twitter:title',
+'twitter:description',
+'twitter:image',
+'twitter:url'
+],
 
-		/**
-		 * Default values for the given keys
-		 */
-		'values' => [
-			'og:image' => 'images/og-image.jpg',
-			'twitter:card' => 'summary_large_image',
-		]
+/**
+* Default values for the given keys
+*/
+'values' => [
+'og:image' => 'images/og-image.jpg',
+'twitter:card' => 'summary_large_image',
+]
 
-	]
+]
 
 ```
 
@@ -64,18 +64,18 @@ The configuration file contains default keys and values array.
 ### Set meta tags
 
 ```php
-Meta::set('title', 'My title')
-Meta::set('description', 'My description')
-Meta::set('og:image', '/images/image.jpg')
+ Meta::set('title', 'My title')
+ Meta::set('description', 'My description')
+ Meta::set('og:image', '/images/image.jpg')
 ````
 
 **and** / **or**
 
 ```php
 Meta::set([
-'title' => 'My title',
-'description' => 'My description',
-'og:image' => '/images/image.jpg'
+ 'title' => 'My title',
+ 'description' => 'My description',
+ 'og:image' => '/images/image.jpg'
 ])
 ```
 
@@ -124,16 +124,16 @@ Given the default keys on the configuration file display above, let's see just b
 #### Model :
 
 ```php
-class Page extends Model
-{
-	public function setMetas()
-	{
-		Meta::set([
-			'title' => $this->seo_title,
-			'description' => $this->seo_desc,
-			'robots' => $this->seo_robots
-		]);
-	}
+ class Page extends Model
+ {
+  public function setMetas()
+  {
+   Meta::set([
+    'title' => $this->seo_title,
+    'description' => $this->seo_desc,
+    'robots' => $this->seo_robots
+   ]);
+  }
 }
 ```
 
@@ -142,11 +142,11 @@ class Page extends Model
 ```php
 class PagesController extends Controller
 {
-	public function show(Page $page)
-	{
-		$page->setMetas();
-		return view('pages.page', compact('page'));
-	}
+ public function show(Page $page)
+ {
+  $page->setMetas();
+  return view('pages.page', compact('page'));
+ }
 }
 ```
 
