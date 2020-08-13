@@ -178,6 +178,11 @@ Given the display wanted fields which are set on your configuration file and bas
 
 
 
+## Next steps
+
+- Add tests
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
